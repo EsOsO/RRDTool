@@ -1,11 +1,14 @@
 # RRDTool
+## WARNING
+This module is compatible only with rrdtool-1.2.30-win32 right now; 1.2.30 is the last win32 build officialy distributed by Tobias Oetiker
+
 ### Abstract
 Provide a wrapper around rrdtool.exe (http://oss.oetiker.ch/rrdtool/)
 
 ### Installation
-* Download the module from github
+* Download the module from [github](https://github.com/EsOsO/RRDTool/archive/master.zip)
 * Place the folder RRDTool in your `$PSModulePath` (eg. `%ProgramFiles%\WindowsPowerShell\Modules`)
-* Download rrdtool.exe and drop it in the bin folder insde RRDTool (eg. `%ProgramFiles%\WindowsPowerShell\Modules\RRDTool\bin`)
+* Download [rrdtool-1.2.30-win32-perl510.zip](http://oss.oetiker.ch/rrdtool/pub/rrdtool-1.2.30-win32-perl510.zip), extract rrdtool.exe (rrdtool-1.2.30-win32-perl510.zip\data\rrd2\rrdtool-1.2.30\Release) and drop it in the bin folder inside RRDTool Powershell Module  (eg. `%ProgramFiles%\WindowsPowerShell\Modules\RRDTool\bin`)
 
 ### Usage
 
