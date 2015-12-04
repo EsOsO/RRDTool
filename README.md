@@ -38,7 +38,7 @@ Update-RRD -FileName C:\Temp\cpu.rrd -Value $Values
 
 #### RRD Graph creation
 ```
-Elements = @(
+$Elements = @(
     New-RRDDef -Name 'cpu_kernel' -FileName $CpuRRD -DataSource 'cpu_kernel' -ConsolidationFunction AVERAGE
     New-RRDDef -Name 'cpu_user' -FileName $CpuRRD -DataSource 'cpu_user' -ConsolidationFunction AVERAGE
     New-RRDDef -Name 'cpu_queue' -FileName $CpuRRD -DataSource 'cpu_queue' -ConsolidationFunction AVERAGE
