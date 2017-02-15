@@ -66,8 +66,25 @@ FormatsToProcess = @()
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = 
-               'New-RRD New-RRDDataSource New-RRDRoundRobinArchive New-RRDPrint New-RRDGPrint New-RRDComment New-RRDShift New-RRDTick New-RRDHRule New-RRDVRule New-RRDLine New-RRDArea New-RRDDef Update-RRD Out-RRDGraph New-RRDCDef New-RRDVDef'
+FunctionsToExport = @(
+  'New-RRD', 
+  'New-RRDDataSource',
+  'New-RRDRoundRobinArchive',
+  'New-RRDPrint',
+  'New-RRDGPrint',
+  'New-RRDComment',
+  'New-RRDShift',
+  'New-RRDTick',
+  'New-RRDHRule',
+  'New-RRDVRule',
+  'New-RRDLine',
+  'New-RRDArea',
+  'New-RRDDef',
+  'Update-RRD',
+  'Out-RRDGraph',
+  'New-RRDCDef',
+  'New-RRDVDef'
+)
 
 # Cmdlets to export from this module
 CmdletsToExport = @()
