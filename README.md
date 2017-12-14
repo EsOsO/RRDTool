@@ -78,5 +78,5 @@ $Elements = @(
     New-RRDGPrint -Name 'cpuqueued_last' -Format 'Last:\t%12.2lf%s'    
 )
 
-Out-RRDGraph -FileName C:\Temp\cpu.png -Title 'CPU Usage - Last day' -Start (Get-Date).AddDays(-7) -LowerLimit 0 -UpperLimit 100 -Rigid $true -Elements $Elements -Verbose
+Out-RRDGraph -FileName C:\Temp\cpu.png -Title 'CPU Usage - Last day' -Start (Get-Date).AddDays(-7) -LowerLimit 0 -UpperLimit 100 -Rigid -Elements $Elements -Verbose
 ```
