@@ -1,9 +1,17 @@
-﻿$RRDTool = '{0}\bin\rrdtool.exe' -f $PSScriptRoot
+﻿param(
+	[string]$RRDToolPath = "Undefined"
+)
+
+If ($RRDToolPath -eq "Undefined") {
+	$RRDTool = '{0}\bin\rrdtool.exe' -f $PSScriptRoot
+} Else {
+    $RRDTool = $RRDToolPath
+}
 
 try {
     & $RRDTool | Out-Null
 } catch {
-    Write-Error ('rrdtool.exe not in module {0}\bin folder' -f $PSScriptRoot)
+    Write-Error ("$RRDTool isn't a valid location for rrdtool.exe")
     break
 }
 
