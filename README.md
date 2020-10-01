@@ -1,5 +1,7 @@
 # RRDTool
 
+## This repository is currently RETIRED, UNSUPPORTED, and UNMAINTAINED.
+
 #### WARNING
 *This module is compatible only with rrdtool-1.2.30-win32 right now; 1.2.30 is the last win32 build officialy distributed by Tobias Oetiker*
 
